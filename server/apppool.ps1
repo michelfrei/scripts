@@ -1,3 +1,4 @@
+#adiciona um app pool nas configurações de IIS
 function Add-applicationpool {
     param (
         [String[]] $computername,
