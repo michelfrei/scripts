@@ -1,0 +1,22 @@
+mapeia pasta no powershell 
+New-PSDrive -Name server01_inet -Root '\\server01\c$\Windows\System32\' -PSProvider FileSystem
+
+lista drives
+Get-PSDrive
+
+exibe uma lista usando uma GUI do powershell
+out-gridview
+
+muda a exibição da forma de uma lista
+format-list
+
+muda a cor de uma linha
+Write-Host "texto de teste" -BackgroundColor Black -ForegroundColor Blue
+
+muda a forma que o powershell lida com erros
+$ErrorActionPreference = "Stop"
+
+
+Glossário
+gci -> Get-ChildItem
+%   -> ForEach-Object
