@@ -16,18 +16,3 @@ function Add-applicationpool {
     $jobs | Remove-Job # remove os jobs após finalizados
     $sessions | Remove-PSSession # remove as sessões abertas
 } 
-
-<# 
-mapeia pasta no powershell 
-New-PSDrive -Name server01_inet -Root '\\server01\c$\Windows\System32\' -PSProvider FileSystem
-
-lista drives
-Get-PSDrive
-
-PS C:\> cd C:\Windows\System32\inetsrv\
-PS C:\Windows\System32\inetsrv> .\appcmd.exe add apppool /name:Servicos /managedRuntimeVersion:v4.0 /managedPipelineMode:Integrated
-
-out-gridview
-format-list
-Add-applicationpool -ComputerName $computers -applicationpoolname "nova-aplicacao" | fl
-#>

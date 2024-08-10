@@ -32,6 +32,3 @@ if($export -eq "HTML"){
 } else {
     $resultado
 }
-
-# $ErrorActionPreference = "Stop"
-# gci -> Get-ChildItem

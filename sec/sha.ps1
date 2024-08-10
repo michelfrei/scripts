@@ -72,12 +72,3 @@ function Get-FileSHA384 () {
 function Get-FileSHA512 () {
 
 }
-
-<#
-$file = "D:\shared\script.ps1"
-$hashSHA1 = Get-FileSHA1 $file
-
-Write-Host "O hash do arquivo eh: $hashSHA1" -BackgroundColor Black -ForegroundColor Blue
-
-#$prettyhashsb.ToString() -BackgroundColor White -ForegroundColor Blue
-#>
